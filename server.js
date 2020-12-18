@@ -13,6 +13,12 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//Import Routers
+const userRouter = require('./routes/userRouter');
+
+// App Routes
+
+app.use('/api', userRouter);
 
 // Database Connection
 const PORT = process.env.PORT || 4000;

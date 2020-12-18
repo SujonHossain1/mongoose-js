@@ -18,7 +18,6 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    isAuth: Boolean,
     dataOfBirth: {
         type: Date,
         default: Date.now,
